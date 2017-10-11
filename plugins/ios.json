@@ -12,6 +12,10 @@
     },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.phonegap.reacthotloadingtemplate"
+    },
+    "phonegap-nfc": {
+      "NFC_USAGE_DESCRIPTION": "Read NFC Tags",
+      "PACKAGE_NAME": "com.phonegap.reacthotloadingtemplate"
     }
   },
   "dependent_plugins": {}
