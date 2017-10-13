@@ -2,7 +2,7 @@ import '../css/message.css';
 
 import React from 'react';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
-
+// import nfc 
 export default React.createClass({
 
   displayName: 'Message',
@@ -12,6 +12,7 @@ export default React.createClass({
   },
 
   render() {
+    // console.log(nfc)
     const { message } = this.props;
     const msg = message
       ? <div className="hello-message" key="has-msg">{ message }</div>

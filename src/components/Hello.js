@@ -5,15 +5,20 @@ import '../css/hello.css';
 
 import Message from './Message';
 
-const Hello = React.createClass({
-
-  displayName: 'Hello',
+class Hello extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      displayName: 'Hello world',
+      message: '',
+    }
+  }
 
   getInitialState() {
     return {
       message: '',
     };
-  },
+  }
 
   sayHello(msg) {
     // CSSTransitionGroup will fade this in
@@ -26,7 +31,7 @@ const Hello = React.createClass({
         message: '',
       });
     }, 2000);
-  },
+  }
 
   render() {
     return (
@@ -34,11 +39,11 @@ const Hello = React.createClass({
         <Message message={ this.state.message } />
         <Tappable
           className="button-say-hello"
-          onTap={ () => this.sayHello('Hello world') }
+          onTap={() => this.sayHello(this.state.displayName)}
         >Say hello</Tappable>
       </div>
     );
-  },
-});
+  }
+};
 
 module.exports = Hello;
