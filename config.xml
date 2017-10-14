@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.reacthotloadingtemplate" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Hello World</name>
+    <name>NFC read-write app</name>
     <description>
-    Hello World sample application using React, Webpack and Hot Reloading.
+    NFC read-write application using Phonegap, React, Webpack and Hot Reloading.
   </description>
     <author email="support@phonegap.com" href="https://github.com/JedWatson">
     Jed Watson and the PhoneGap Team
